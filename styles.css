@@ -484,33 +484,7 @@ header {
 }
 
 /* Media query for smartphone screens */
-@media (max-width: 481px) {
-  .kegiatan-slider {
-    max-width: 768px; /* Ensure the slider takes full screen width */
-  }
-
-  header {
-    max-width: 481px;
-  }
-
-  .kegiatan-slide img {
-    width: 350px;
-    height: 250px; /* Further reduce image size */
-  }
-
-  .kegiatan-prev, .kegiatan-next {
-    font-size: 18px;
-    padding: 6px;
-  }
-
-  .kegiatan-prev:hover,
-.kegiatan-next:hover {
-  width: 40px;
-  height: 40px;
-}
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
   .kegiatan-slider {
     max-width: 100%; /* Ensure the slider takes full screen width */
   }
