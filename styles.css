@@ -506,6 +506,28 @@ header {
 }
 }
 
+@media (max-width: 1200px) {
+  .kegiatan-slider {
+    max-width: 100%; /* Ensure the slider takes full screen width */
+  }
+
+  .kegiatan-slide img {
+    width: 350px;
+    height: 250px; /* Further reduce image size */
+  }
+
+  .kegiatan-prev, .kegiatan-next {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .kegiatan-prev:hover,
+.kegiatan-next:hover {
+  width: 40px;
+  height: 40px;
+}
+}
+
 
 /* Gaya untuk Section Ekstrakurikuler */
 .ekstrakurikuler {
