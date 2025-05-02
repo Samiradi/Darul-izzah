@@ -486,7 +486,7 @@ header {
 /* Media query for smartphone screens */
 @media (max-width: 480px) {
   .kegiatan-slider {
-    max-width: 100%; /* Ensure the slider takes full screen width */
+    max-width: 768px; /* Ensure the slider takes full screen width */
   }
 
   .kegiatan-slide img {
