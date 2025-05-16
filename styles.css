@@ -71,29 +71,27 @@ header {
   height: 3px;
   margin: 5px 0;
   transition: 0.4s;
-  width: 35px;
-  margin-left: 20rem;
+  width: 25px;
 }
 
 /* Gaya Menu Navigasi */
 .nav-menu {
   display: none; /* Sembunyikan menu secara default */
   position: absolute;
-  top: 150px;
+  top: var(--header-height);
   right: 20px;
   background-color: var(--primary-color);
   border-radius: 8px;
   padding: 15px;
   z-index: 1000; /* Pastikan di atas elemen lain */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 10rem;
 }
 
 .nav-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: right;
 }
 
 .nav-menu ul li {
@@ -103,7 +101,7 @@ header {
 .nav-menu ul li a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
 
 /* Slider untuk gambar besar */
@@ -228,8 +226,6 @@ header {
   background-size: cover;
   background-position: center;
   color: var(--text-color);
-  background-repeat: no-repeat;
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
 .welcome-section::before {
@@ -264,7 +260,6 @@ header {
 .profile {
   position: relative;
   padding: 14rem 3rem;
-  margin-top: 2rem;
   text-align: center;
   background-image: url("./image/ngaji.jpg");
   background-size: cover;
@@ -306,7 +301,6 @@ header {
   padding: 14rem 3rem;
   color: var(--text-color);
   text-align: center;
-  margin-top: 2rem;
 }
 
 .advantages .content {
@@ -342,7 +336,6 @@ header {
   padding: 14rem 3rem;
   color: var(--text-color);
   text-align: center;
-  margin-top: 2rem;
 }
 
 .fasilitas .content {
@@ -378,7 +371,6 @@ header {
   padding: 14rem 3rem;
   color: var(--text-color);
   text-align: center;
-  margin-top: 2rem;
 }
 
 .mata-pelajaran .content {
@@ -406,107 +398,6 @@ header {
   font-size: 1.2em;
 }
 
-/* Kegiatan section styles */
-#kegiatan {
-  text-align: center;
-  margin: 50px 0;
-  color: var(--secondary-color);
-  background-color: var(--background-color);
-}
-
-.kegiatan-slider {
-  position: relative;
-  max-width: 400px;
-  /* height: 500px; */
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.kegiatan-slides {
-  display: flex;
-  transition: transform 2s ease-in-out;
-  will-change: transform;
-}
-
-.kegiatan-slide {
-  min-width: 100%;
-  transition: opacity 2s ease-in-out;
-  box-sizing: border-box;
-}
-
-.kegiatan-slide img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.kegiatan-prev,
-.kegiatan-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 24px;
-  border-radius: 5px;
-}
-
-.kegiatan-prev {
-  left: 20px;
-}
-
-.kegiatan-next {
-  right: 20px;
-}
-
-.kegiatan-prev:hover,
-.kegiatan-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Media query for tablet screens */
-@media (max-width: 768px) {
-  .kegiatan-slider {
-    max-width: 600px; /* Adjust the slider width */
-  }
-
-  .kegiatan-slide img {
-    width: 90%; /* Make the images smaller */
-  }
-
-  .kegiatan-prev, .kegiatan-next {
-    font-size: 20px;
-    padding: 8px;
-  }
-}
-
-/* Media query for smartphone screens */
-@media (max-width: 480px) {
-  .kegiatan-slider {
-    max-width: 100%; /* Ensure the slider takes full screen width */
-  }
-
-  .kegiatan-slide img {
-    width: 350px;
-    height: 250px; /* Further reduce image size */
-  }
-
-  .kegiatan-prev, .kegiatan-next {
-    font-size: 18px;
-    padding: 6px;
-  }
-
-  .kegiatan-prev:hover,
-.kegiatan-next:hover {
-  width: 40px;
-  height: 40px;
-}
-}
-
-
 /* Gaya untuk Section Ekstrakurikuler */
 .ekstrakurikuler {
   background-image: url("./image/bg-extrakul.jpg"); /* Ganti dengan path gambar yang diinginkan */
@@ -515,7 +406,6 @@ header {
   padding: 14rem 3rem;
   color: var(--text-color);
   text-align: center;
-  margin-top: 2rem;
 }
 
 .ekstrakurikuler .content {
@@ -677,50 +567,10 @@ header {
   margin: 0 auto; 
 }
 
-/* persyaratan */
-
-#persyaratan {
-  background-image: url('./image/2597.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 50px 0;
-  color: white;
-  text-align: left;
-}
-
-.persyaratan-content {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Transparansi */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.persyaratan-content h2 {
-  text-align: center;
-  padding: 0;
-  color: var(--primary-color);
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-} 
-
-.persyaratan-content ul {
-  list-style-type: none;
-}
-
-.persyaratan-content ul li {
-  font-size: 1rem;
-  margin: 10px 0;
-
-}
-
-
-
 /* Gaya Tombol CTA */
 .cta {
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .cta button {
@@ -742,14 +592,16 @@ header {
 
 /* Animasi Blink */
 @keyframes blink {
-  0%, 100% {
-    transform: scale(1);
+  0% {
+    background-color: blue;
   }
   50% {
-    transform: scale(1.05);
+    background-color: grey;
+  }
+  100% {
+    background-color: var(--primary-color);
   }
 }
-
 
 /* Gaya Media Sosial */
 .social-media {
@@ -889,13 +741,9 @@ footer p {
   font-size: 0.9em;
 }
 
-.created {
+p span {
   text-align: center;
-  font-size: 0.8rem;
-}
-
-.created span {
-  color: #010101;
+  font-size: 1rem;
 }
 
 /* Media Queries untuk Responsivitas */
